@@ -1,0 +1,76 @@
+.af_bf>h1
+{
+    
+    font-size: 60px;
+    position: relative;
+}
+
+.custom
+{
+    font-family: 'Segoe ui light';
+    margin-bottom: 20px;
+}
+
+.af_bf>h1::after
+{
+    
+    content: '';
+    background-color: #ccc;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    height: 5px;
+    width: 38%;
+
+}
+
+.af_bf>h1::before
+{
+    
+    content: '';
+    background-color: #ccc;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    height: 5px;
+    width: 38%;
+
+}
+
+.h-3
+{
+    height: 3px;
+}
+.bdrb
+{
+    position: relative;
+    
+}
+.bdrb::after
+{
+    content: '';
+    background-color: #ccc;
+    position: absolute;
+    left: 25%;
+    top: 250%;
+    height: 3px;
+    width: 50%;
+
+}
+.bdrb::before
+{
+    content: '';
+    background-color: #ffc107;
+    position: absolute;
+    left: 0%;
+    top: 500%;
+    height: 3px;
+    width: 100%;
+
+}
+
+
+
+
+
+
