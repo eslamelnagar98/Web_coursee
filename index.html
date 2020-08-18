@@ -1,115 +1,62 @@
 <html>
 
-<head>
 
+<head>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+
 </head>
 
 <body>
 
-    <header>
-        <div class="container-fluid pt-1">
-            <div class="row px-4 pt-4">
-                <div class="col-sm-12 col-md-12 col-lg-12 px-5">
-                    <div class="h3_design pb-4 px-5">
-                        <h3 class="my-4 px-5 py-4">Bookmarker</h3>
-                    </div>
+    <div class="container">
+        <h2 class="title">Bookmarks</h2>
+        <div class="p-4 bg rounded">
+            <h2 class="text-center group-title">Bookmark your favorite sites</h2>
+            <div class="form-group">
+                <label class="text-muted font-weight-bolder d-block text-center mt-5 mb-3"> Site Name</label>
+                <input id="siteName" type="text" placeholder="Bookmark Name" class="form-control w-75 m-auto">
+                <div class="msg error-2 w-75 mx-auto  mt-2 " id="errorName">
                 </div>
-
+                <div class="text-danger mx-auto mt-2 d-none alert alert-danger w-75" id="WebsiteNameAlert">
+                    you Must Enter Valid Form of Websites Name
+                </div>
             </div>
+            <div class="form-group">
+                <label class="text-muted font-weight-bolder d-block text-center mt-3 mb-3"> Site URL</label>
+                <input id="urlName" type="text" placeholder="Website URL" class="form-control w-75 m-auto">
+                <div class="msg error-2 w-75 mx-auto  mt-2 " id="errorUrl"></div>
+                <div class="text-danger mx-auto mt-2 d-none alert alert-danger w-75" id="WebsiteUrlAlert">
+                    you Must Enter Valid Form of Websites Ulr
+                </div>
+            </div>
+            <button class="btn btn-primary d-block m-auto shadow" id="submit">Submit</button>
         </div>
+        <div id="list">
 
-    </header>
-
-
-    <section>
-        <div class="container second_section p-5 mb-4">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="bookmark_content text-center ">
-                        <h2 class="pb-4">Bookmark your favorite sites</h2>
-                        <p>Site Name</p>
-                        <div class="d-flex justify-content-center ">
-                            <div class=" pb-3 w-90 ">
-                                <input class="form-control" type="text" id="Site_name" placeholder="Bookmark Name">
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-center ">
-                            <div id="name_require" class=" text-center form-control mb-2">
-                                <h5>Name is required</h5>
-                            </div>
-                        </div>
-
-                        <p>Site URL</p>
-                        <div class="d-flex justify-content-center ">
-                            <div class="pb-3 w-90 ">
-                                <input class="form-control" type="text" id="Website Url" placeholder="Website Url">
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <div id="Url_require" class=" text-center form-control mb-4">
-                                <h5>Url Field is required</h5>
-                            </div>
-                        </div>
-                        <button id="submit" class="btn">submit</button>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        <div>
-            <div id="islam" class="px-5 ">
-                <div class="px-5">
-                    <div class="px-5 ">
-                        <div class="px-5">
-                            <div class=" px-1">
-                                <div id="last_section" class="px-1 py-4 pl-3 ">
-
-
-                                  
-                                       
-                                    </div>
-          
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                   
-                </div>
-               
-            </div>
-            
+           
         </div>
 
 
-                
-
-            
-
-
-
-    </section>
+        <footer class="mt-5 footer">
+            <h5 class="p-3 text-muted font-weight-bolder">© 2020 Bookmarker Inc.</h5>
+        </footer>
 
 
-      
+    </div>
 
 
 
 
-
-
-
-
-
-    
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/first.js"></script>
-
-
+    <script src="first.js"></script>
 </body>
 
 </html>
